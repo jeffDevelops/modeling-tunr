@@ -1,3 +1,4 @@
+/// <reference types="node" />
 
 
 import { enableProdMode } from '@angular/core';

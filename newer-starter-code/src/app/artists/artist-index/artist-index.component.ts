@@ -26,7 +26,7 @@ export class ArtistIndexComponent implements OnInit {
   	this.artistsService.getAllArtists()
   		.subscribe(response => {
 				console.log(response.json());
-				this.allArtists = response.json()
+				this.allArtists = response.json();
 			});
   }
 

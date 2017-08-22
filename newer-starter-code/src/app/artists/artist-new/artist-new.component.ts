@@ -23,10 +23,10 @@ export class ArtistNewComponent implements OnInit {
   	console.log(newArtist);
   	this.artistsService.saveArtist(newArtist)
   			.subscribe(response => {
-			console.log(response.json());
-			let artist = response.json();
-			window.location.href = "/artists/" + artist.id;
-		})
+			    console.log(response.json());
+			    let artist = response.json();
+			    window.location.href = "/artists/" + artist.id;
+		    });
   }
 
 }
